@@ -1,1 +1,11 @@
-<h1>Homepage</h1>
+<% @topics.each do |topic| %>
+  <div class="col-md-10 col-md-offset-1">
+    <div class="message">
+      <h2 class="message-title"><%= topic.title %></h2>
+      <%= link_to "Join Topic", topic, class: "btn-custom" %>
+    </div>
+  </div>
+<% end %>
+
+
+<%= link_to "Post Topic", new_topic_path %>

@@ -1,6 +1,11 @@
 class TopicsController < ApplicationController
+  # before_action :find_topic, only:
   def index
+    @topics = Topic.all.order("created_at DESC")
+  end
 
+  def show
+    @topic = Topic.find(params[:id])
   end
 
   def new
@@ -21,4 +26,7 @@ class TopicsController < ApplicationController
     params.require(:topic).permit(:title, :description)
   end
 
+  # def find_topic
+  #   @topic = Topic.find(params[:id])
+  # end
 end
