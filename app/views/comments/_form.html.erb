@@ -1,1 +1,4 @@
-_form.html.erb
+<%= simple_form_for ([@topic, @topic.comment.build]) do |f|%>
+  <%= f.input :content, label: "Comments" %>
+  <%= f.button :submit, class: "btn-custom " %>
+<% end %>
