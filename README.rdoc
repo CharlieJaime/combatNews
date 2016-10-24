@@ -1,4 +1,0 @@
-== README
-Ruby on Rails
-
-Combat News app is Forum about full contact sport. You can post a Topic and people can join the topic and have a conversation in the comment section.
