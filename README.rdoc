@@ -1,0 +1,4 @@
+== README
+
+This Ruby on Rails app is a forum of full contact sports like boxing and mixed marial arts.
+You able to post a topic and join the disscuion with in the comment section.
