@@ -20,11 +20,11 @@
 /* General styles */
 
 body {
-  background: #ffffff;
-  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #8f0222 63%, #6d0019 100%);
-  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#8f0222 63%,#6d0019 100%);
-  background: radial-gradient(ellipse at center, #ffffff 0%,#8f0222 63%,#6d0019 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6d0019',GradientType=1 );
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.12+0,0+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.12) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.12) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,24 +59,30 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   font-family: 'Candal', sans-serif;
   text-transform: uppercase;
+  background-color: black;
 }
 
 .navbar-default {
 
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #fff;
+  // background-color: black;
 
   .navbar-nav > li > a {
-    color: #222;
+    color: white;
   }
 
   .navbar-link {
-    color: #222;
+    color: white;
   }
 
+  .navbar-nav > li > a:hover,
+  .navbar-brand:hover{
+    background-color: white;
+    color: black;
+  }
   .navbar-brand {
-    color: #ec6767;
+    color: white;
     letter-spacing: 1.1px;
     font-size: 1.9em;
   }
